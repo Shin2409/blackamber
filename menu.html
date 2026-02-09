@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Black Amber Coffee Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Black Amber Coffee</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" id="navCartCount">0</span></a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Header -->
+  <section class="menu-header">
+    <h1>Our Menu</h1>
+    <p>Handcrafted with passion, served with love</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <div class="container">
+      <!-- Category Filter -->
+      <div class="category-btns">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="coffee">Coffee</button>
+        <button class="category-btn" data-category="pastries">Pastries</button>
+        <button class="category-btn" data-category="cakes">Cakes</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- COFFEE -->
+        <div class="menu-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop" alt="Espresso">
+          <div class="menu-item-content">
+            <h3>Espresso</h3>
+            <p class="description">Rich and bold espresso shot</p>
+            <div class="temp-options">
+              <label class="temp-option">
+                <input type="radio" name="temp-espresso" value="hot" checked>
+                <span>Hot</span>
+              </label>
+              <label class="temp-option">
+                <input type="radio" name="temp-espresso" value="cold">
+                <span>Iced</span>
+              </label>
+            </div>
+            <div class="menu-item-footer">
+              <span class="price">$3.00</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Espresso" data-price="3.00" data-image="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop" alt="Cappuccino">
+          <div class="menu-item-content">
+            <h3>Cappuccino</h3>
+            <p class="description">Espresso with steamed milk foam</p>
+            <div class="temp-options">
+              <label class="temp-option">
+                <input type="radio" name="temp-cappuccino" value="hot" checked>
+                <span>Hot</span>
+              </label>
+              <label class="temp-option">
+                <input type="radio" name="temp-cappuccino" value="cold">
+                <span>Iced</span>
+              </label>
+            </div>
+            <div class="menu-item-footer">
+              <span class="price">$4.50</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Cappuccino" data-price="4.50" data-image="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="Latte">
+          <div class="menu-item-content">
+            <h3>Latte</h3>
+            <p class="description">Smooth espresso with steamed milk</p>
+            <div class="temp-options">
+              <label class="temp-option">
+                <input type="radio" name="temp-latte" value="hot" checked>
+                <span>Hot</span>
+              </label>
+              <label class="temp-option">
+                <input type="radio" name="temp-latte" value="cold">
+                <span>Iced</span>
+              </label>
+            </div>
+            <div class="menu-item-footer">
+              <span class="price">$4.00</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Latte" data-price="4.00" data-image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop" alt="Americano">
+          <div class="menu-item-content">
+            <h3>Americano</h3>
+            <p class="description">Espresso with hot water</p>
+            <div class="temp-options">
+              <label class="temp-option">
+                <input type="radio" name="temp-americano" value="hot" checked>
+                <span>Hot</span>
+              </label>
+              <label class="temp-option">
+                <input type="radio" name="temp-americano" value="cold">
+                <span>Iced</span>
+              </label>
+            </div>
+            <div class="menu-item-footer">
+              <span class="price">$3.50</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Americano" data-price="3.50" data-image="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop" alt="Mocha">
+          <div class="menu-item-content">
+            <h3>Mocha</h3>
+            <p class="description">Chocolate espresso delight</p>
+            <div class="temp-options">
+              <label class="temp-option">
+                <input type="radio" name="temp-mocha" value="hot" checked>
+                <span>Hot</span>
+              </label>
+              <label class="temp-option">
+                <input type="radio" name="temp-mocha" value="cold">
+                <span>Iced</span>
+              </label>
+            </div>
+            <div class="menu-item-footer">
+              <span class="price">$4.75</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Mocha" data-price="4.75" data-image="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PASTRIES -->
+        <div class="menu-item" data-category="pastries">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop" alt="Croissant">
+          <div class="menu-item-content">
+            <h3>Croissant</h3>
+            <p class="description">Flaky, buttery perfection</p>
+            <div class="menu-item-footer">
+              <span class="price">$3.50</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Croissant" data-price="3.50" data-image="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop" alt="Danish Pastry">
+          <div class="menu-item-content">
+            <h3>Danish Pastry</h3>
+            <p class="description">Sweet and flaky delight</p>
+            <div class="menu-item-footer">
+              <span class="price">$4.00</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Danish Pastry" data-price="4.00" data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=400&h=300&fit=crop" alt="Cinnamon Roll">
+          <div class="menu-item-content">
+            <h3>Cinnamon Roll</h3>
+            <p class="description">Warm cinnamon swirl</p>
+            <div class="menu-item-footer">
+              <span class="price">$4.25</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Cinnamon Roll" data-price="4.25" data-image="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=400&h=300&fit=crop" alt="Blueberry Muffin">
+          <div class="menu-item-content">
+            <h3>Blueberry Muffin</h3>
+            <p class="description">Bursting with fresh blueberries</p>
+            <div class="menu-item-footer">
+              <span class="price">$3.75</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Blueberry Muffin" data-price="3.75" data-image="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&h=300&fit=crop" alt="Scone">
+          <div class="menu-item-content">
+            <h3>Scone</h3>
+            <p class="description">Classic British treat</p>
+            <div class="menu-item-footer">
+              <span class="price">$3.25</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Scone" data-price="3.25" data-image="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAKES -->
+        <div class="menu-item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Chocolate Cake">
+          <div class="menu-item-content">
+            <h3>Chocolate Cake</h3>
+            <p class="description">Rich chocolate layers</p>
+            <div class="menu-item-footer">
+              <span class="price">$5.50</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="5.50" data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=400&fit=crop" alt="Cheesecake">
+          <div class="menu-item-content">
+            <h3>Cheesecake</h3>
+            <p class="description">Creamy New York style</p>
+            <div class="menu-item-footer">
+              <span class="price">$6.00</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Cheesecake" data-price="6.00" data-image="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=400&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=300&fit=crop" alt="Red Velvet Cake">
+          <div class="menu-item-content">
+            <h3>Red Velvet Cake</h3>
+            <p class="description">Classic southern favorite</p>
+            <div class="menu-item-footer">
+              <span class="price">$5.75</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Red Velvet Cake" data-price="5.75" data-image="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&h=300&fit=crop" alt="Carrot Cake">
+          <div class="menu-item-content">
+            <h3>Carrot Cake</h3>
+            <p class="description">Moist with cream cheese frosting</p>
+            <div class="menu-item-footer">
+              <span class="price">$5.25</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Carrot Cake" data-price="5.25" data-image="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cakes">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmH2H_kluKH64hZv_JHPqsfp_jJS_91XFo5QZZHZX8ozEdZB1ZW07OQmQ&s=10" alt="Tiramisu">
+          <div class="menu-item-content">
+            <h3>Tiramisu</h3>
+            <p class="description">Italian coffee-flavored dessert</p>
+            <div class="menu-item-footer">
+              <span class="price">$6.50</span>
+              <div class="cart-controls">
+                <div class="quantity-spinner">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" data-name="Tiramisu" data-price="6.50" data-image="https://images.unsplash.com/photo-1588195538326-c5b1e5b80d4d?w=400&h=300&fit=crop">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Black Amber Coffee Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+                  </html>
